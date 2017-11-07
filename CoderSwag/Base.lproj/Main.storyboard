@@ -29,7 +29,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jhx-Qv-B2x">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="145" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jhx-Qv-B2x">
                                 <rect key="frame" x="0.0" y="70" width="375" height="533"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -37,11 +37,11 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="143"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zF7-48-v5l" id="nwM-nk-7K0">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="142.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="143"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="FKE-df-ToG">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="142.5"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="136.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQ6-dY-8ak">
                                                     <rect key="frame" x="109.5" y="57.5" width="156" height="28"/>
@@ -55,12 +55,12 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="FKE-df-ToG" firstAttribute="top" secondItem="nwM-nk-7K0" secondAttribute="top" constant="3" id="OWF-Y8-hV9"/>
                                                 <constraint firstItem="UQ6-dY-8ak" firstAttribute="centerY" secondItem="nwM-nk-7K0" secondAttribute="centerY" id="RIH-Ml-IuM"/>
                                                 <constraint firstItem="UQ6-dY-8ak" firstAttribute="centerX" secondItem="nwM-nk-7K0" secondAttribute="centerX" id="Wr2-o4-CcF"/>
-                                                <constraint firstItem="FKE-df-ToG" firstAttribute="top" secondItem="nwM-nk-7K0" secondAttribute="top" id="Xoz-K0-ba2"/>
                                                 <constraint firstAttribute="trailing" secondItem="FKE-df-ToG" secondAttribute="trailing" id="aPV-Ep-JGQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="FKE-df-ToG" secondAttribute="bottom" constant="3" id="w04-Xe-W0S"/>
                                                 <constraint firstItem="FKE-df-ToG" firstAttribute="leading" secondItem="nwM-nk-7K0" secondAttribute="leading" id="wP2-Lg-6FN"/>
-                                                <constraint firstAttribute="bottom" secondItem="FKE-df-ToG" secondAttribute="bottom" id="wfE-Hh-hMN"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
