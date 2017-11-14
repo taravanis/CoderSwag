@@ -86,17 +86,17 @@
                     <navigationItem key="navigationItem" title="Coder Swag" id="svV-cW-UgK"/>
                     <connections>
                         <outlet property="catagoryTable" destination="Jhx-Qv-B2x" id="MS1-hB-Ira"/>
-                        <segue destination="oli-t5-9hP" kind="show" id="OS7-1y-sTE"/>
+                        <segue destination="oli-t5-9hP" kind="show" identifier="ProductsVC" id="OS7-1y-sTE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="76" y="124.58770614692655"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductsVC-->
         <scene sceneID="hgv-OR-pVs">
             <objects>
-                <viewController id="oli-t5-9hP" sceneMemberID="viewController">
+                <viewController id="oli-t5-9hP" customClass="ProductsVC" customModule="CoderSwag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bqd-D8-fNq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,7 +121,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="huV-mg-ACS" customClass="ProductCell" customModule="CoderSwag" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="huV-mg-ACS" customClass="ProductCell" customModule="CoderSwag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="178" height="297"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -165,7 +165,7 @@
                                             <constraint firstAttribute="trailingMargin" secondItem="F2y-rO-Qoy" secondAttribute="trailing" id="yKZ-19-YsJ"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="productImag" destination="zhe-oq-4Xi" id="ah9-8b-F1l"/>
+                                            <outlet property="productImage" destination="zhe-oq-4Xi" id="1Yf-bd-h8D"/>
                                             <outlet property="productPrice" destination="F2y-rO-Qoy" id="swf-h0-X17"/>
                                             <outlet property="productTitle" destination="r97-Ki-esN" id="55o-Hw-PkX"/>
                                         </connections>
@@ -184,6 +184,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oXk-bN-Bmi"/>
                     </view>
+                    <connections>
+                        <outlet property="productsCollection" destination="Kyv-Fa-5Up" id="NS7-CB-eKS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6sW-EA-Cqu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
